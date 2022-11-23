@@ -1,16 +1,13 @@
 import React from 'react';
+import { Navbar, Col } from 'react-bootstrap';
 import './footer.css';
 
 export default function Footer() {
   return (
-    <>
-    <div className="bg-black text-white footer mt-10">
-        <div className="row">
-            <div className="col-md-12 text-center">
+    <Navbar bg="danger" variant="light" expand="lg">
+            <Col className="text-center text-light">
                 Copyright <i className="fa fa-copyright"></i> 2022 Valentin Sznitowski
-            </div>
-        </div>
-    </div>
-</>
+            </Col>
+    </Navbar>
   );
 }
